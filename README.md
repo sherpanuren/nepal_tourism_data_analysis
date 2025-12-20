@@ -1,53 +1,57 @@
-# Nepal Tourism Data Analysis
+# Nepal Tourism Data Analysis Project
 
-## About This Project
+## Project Description
+This project analyzes Nepal's official tourism statistics (2012-2024) obtained from Open Data Nepal. The dataset includes comprehensive tourism metrics such as arrivals, demographics, nationalities, purpose of visit, entry points, and aviation movement data.
 
-This project analyzes Nepal's tourism arrival data to help tourism stakeholders make better decisions. It processes tourist arrival data from multiple sources and creates easy-to-understand visualizations and dashboards.
+## Data Source
+**Dataset:** Nepal Tourism Statistics (2012-2024)  
+**Source:** https://opendatanepal.com/datasets/nepal-tourism-statistics  
+**Original Publisher:** Ministry of Culture, Tourism & Civil Aviation, Nepal  
+**Dataset Description:** Consolidated tourism statistics from Nepal's annual reports, cleaned and standardized into machine-readable format.
 
-## What's Inside
+## What's in the Data
+The dataset includes:
+- Tourist arrivals by nationality (2012-2024)
+- Monthly arrival statistics
+- Demographics (age, gender)
+- Purpose of visit (holiday, trekking, business, etc.)
+- Entry points (airports, land borders)
+- Aviation movement data
+- Key tourism economic indicators
 
+## How to Use This Repository
+
+### 1. Get the Data
+Download the CSV files from:
 ```
-tourism-analysis/
-├── 📁 datasets/          # Your raw CSV files go here
-├── 📁 notebooks/         # Jupyter notebooks with analysis code
-├── 📁 outputs/          # Cleaned and merged data files
-└── 📁 powerbi/          # Files ready for Power BI dashboards
+https://opendatanepal.com/datasets/nepal-tourism-statistics
 ```
-
-## How to Use
-
-### 1. Set Up Your Data
-- Put all your CSV files in the `datasets/` folder
-- Make sure they have similar column names
+Place all downloaded CSV files in the `datasets/` folder.
 
 ### 2. Run the Analysis
-Open `Tourism_Analysis.ipynb` in Jupyter Notebook and run all cells. This will:
-- Merge all your CSV files
-- Clean the data
-- Create useful charts and insights
-- Prepare files for Power BI
+Open `Tourism_Analysis.ipynb` in Jupyter Notebook and execute the cells to:
+- Merge multiple annual CSV files
+- Clean and standardize the data
+- Generate insights and visualizations
+- Prepare data for dashboarding
 
 ### 3. Create Power BI Dashboard
-1. Open Power BI Desktop
-2. Import the files from the `powerbi/` folder
-3. Connect the tables in the Model view:
-   - Link Date columns between tables
-   - Link Nationality columns
-4. Build your dashboard with:
-   - Arrival trends over time
-   - Top source countries
-   - Seasonality patterns
-   - Recovery analysis
+Use the exported CSV files in the `powerbi/` folder to build interactive dashboards in Power BI Desktop.
 
 ## Key Analysis Areas
+- Tourism recovery trends post-COVID
+- Market diversification analysis
+- Seasonality patterns
+- Top source countries and growth rates
+- Purpose of visit trends
 
-- **Market Trends**: See which countries send the most tourists
-- **Seasonality**: Find busy vs slow months
-- **Recovery**: Track post-COVID tourism recovery
-- **Growth Opportunities**: Identify fast-growing markets
+## Notes
+- This project works with the standardized dataset from Open Data Nepal
+- The original data comes from Nepal Tourism Statistics annual publications
+- All analysis is based on publicly available official statistics
 
-## Tips for Better Results
+## Requirements
+See `requirements.txt` for Python dependencies.
 
-1. **Keep Data Consistent**: Make sure all CSV files have the same column structure
-2. **Update Regularly**: Add new monthly data to the datasets folder
-3. **Customize for Your Needs**: Adjust the code for your specific questions
+---
+*This project analyzes publicly available tourism data for research and educational purposes.*
