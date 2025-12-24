@@ -3,6 +3,8 @@
 ## Project Description
 This project analyzes Nepal's official tourism statistics (2012-2024) obtained from Open Data Nepal. The dataset includes comprehensive tourism metrics such as arrivals, demographics, nationalities, purpose of visit, entry points, and aviation movement data.
 
+![Screenshot](image/tourism_dashboard.png)
+
 ## Data Source
 **Dataset:** Nepal Tourism Statistics (2012-2024)  
 **Source:** https://opendatanepal.com/datasets/nepal-tourism-statistics  
